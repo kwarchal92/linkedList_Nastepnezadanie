@@ -18,8 +18,19 @@ public class Main {
         }
 
         Iterator<Integer> it = liczba.iterator();
-        System.out.print("wyswietlamy liczby pseudolosowe od lewej do prawej: ");
+        System.out.print("\nwyswietlamy liczby pseudolosowe od lewej do prawej: ");
 
-        
+        while(it.hasNext())
+            System.out.print(it.next() + ", ");
+
+        System.out.println();
+
+        Iterator<Integer> it1 = liczba.descendingIterator();
+        System.out.print("Wyswietlamy liczby pseudolosowe od prawej do lewej: ");
+
+        while (it1.hasNext())
+            System.out.print(it1.next() + ", ");
+
+        System.out.println();
     }
 }
